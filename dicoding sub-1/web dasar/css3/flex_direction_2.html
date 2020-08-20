@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Containner</title>
+</head>
+<style>
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    /* Properti lainnya */
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #11c5c6;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    /* Properti lainnya */
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fbdd1c;
+  }
+
+  .box {
+    flex-grow: 1;
+    /* Properti lainnya */
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #e62f90;
+  }
+
+</style>
+<body>
+  <div class="flex-column">
+    <div class="flex-row">
+      <div class="box merge">flex-grow</div>
+      <div class="box">flex-grow</div>
+      <div class="box">flex-grow</div>
+    </div>
+    <div class="flex-row">
+      <div class="box">flex-grow </div>
+      <div class="box">flex-grow </div>
+      <div class="box">flex-grow </div>
+    </div>
+  </div>
+</body>
+</html>

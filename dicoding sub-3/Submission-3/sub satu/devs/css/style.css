@@ -1,0 +1,169 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/*Body*/
+body {
+  background-color: #F8F7FF;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*Navbar*/
+.nav-wrapper {
+
+}
+
+.nav-wrapper ul li {
+  text-transform: uppercase;
+}
+
+/*Main*/
+main {
+  flex: 1 0 auto;
+}
+
+main .container {
+  width: 80%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.jumbotron {
+  color: #545454;
+  width: 100%;
+  text-align: center;
+  background-image: url('../image/jumbo.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: center;
+  padding: 70px 0;
+}
+
+.jumbotron h3 {
+   color: #07a47d; 
+}
+
+.jumbotron h5 {
+   color: #0e7b60;
+}
+
+.aside-right {
+  margin: 30px 0;
+}
+
+.card-image {
+  cursor: pointer;
+}
+
+.card-image .card-title {
+  font-weight: 400!important;
+}
+
+.card-content h3 {
+  color: #413d3d;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card-content ol li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+ol li a:hover {
+  color: #076ebd;
+  text-decoration: underline;
+}
+
+
+.collection img {
+  width: 35px;
+  margin-right: 13px;
+}
+
+
+/*Footer*/
+.page-footer .sosmed img {
+  width: 35px;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.sosmed a:hover img {
+    transform: scale(1.08);
+}
+
+.copy p {
+  color: #7c4dff ;
+}
+
+.copy p span {
+  color: red;
+}
+
+
+@media (max-width: 576px) {
+  /*Jumbotron*/
+  .jumbotron h3 {
+     font-size: 26px;
+  }
+
+  .jumbotron h5 {
+     font-size: 1.2em;
+  }
+
+  .card-content h3 {
+    font-size: 17px;
+  }
+
+  .card-content  ol {
+    margin-left: -15px;
+  }
+
+  .card-content  ol li {
+    font-size: 15px;
+  }
+
+
+  /*Footer*/
+  .page-footer .sosmed, .page-footer .copy {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  .page-footer .sosmed {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+  }
+
+   .page-footer .sosmed img {
+    width: 30px;
+  }
+
+}

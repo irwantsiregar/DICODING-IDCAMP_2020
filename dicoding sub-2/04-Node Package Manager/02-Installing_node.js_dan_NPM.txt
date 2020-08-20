@@ -1,0 +1,30 @@
+# Installing Node.js & NPM
+
+Jika kita ingin menggunakan NPM maka kita perlu memasang Node.js pada komputer kita. Jika sudah memasangnya, Anda bisa menuju materi selanjutnya. Namun jika belum, silakan ikut panduan memasang Node.js pada instruksi berikut.
+
+
+Windows
+Jika Anda menggunakan Windows untuk mengunduh Node.js, kita kunjungi situs https://nodejs.org/ dan unduh Node.js versi LTS.
+
+NB :
+- Disini untuk belajar Node.js https://nodejs.dev/learn
+- Disini untuk melihat panduan https://nodejs.org/en/docs/guides/
+
+LTS merupakan kepanjangan dari Long Term Support. Artinya versi tersebut didukung dapat digunakan dalam jangka waktu lama.
+
+Setelah berhasil mengunduhnya, silakan buka berkas tersebut dan ikuti instruksi-instruksi yang diberikan.
+
+Jika Anda ingin mengubah lokasi pemasangannya, Anda bisa tentukan lokasi sesuai yang Anda inginkan.
+
+Pada bagian selanjutnya, kita juga dapat melihat komponen apa saja yang akan diterapkan (bundling) dalam pemasangan node.js ini.
+
+Lalu ikuti instruksi selanjutnya dan tunggu proses pemasangan hingga selesai. Jika pemasangan telah selesai dan berhasil, maka pesan seperti ini akan tampil.
+
+Untuk memastikan Node.js dan NPM berhasil dipasang, Anda dapat menuliskan dua baris kode berikut pada powershell atau command prompt.
+C:\Users\IRWAN>node -v
+v12.17.0
+
+C:\Users\IRWAN>npm -v
+6.14.4
+
+Jika menampilkan nomor versi berarti Node.js dan NPM sudah berhasil terpasang pada komputer Anda.

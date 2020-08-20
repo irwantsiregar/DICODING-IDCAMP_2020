@@ -1,0 +1,94 @@
+/*Body*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../image/sports.png);
+	/*background-attachment: cover;
+	background-position: center;*/
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+}
+
+/*Main & content*/
+#body-content {
+	min-height: 100%;
+	position: relative;
+}
+
+.btn-back {
+	margin: 10px;
+}
+
+.slider h3, .slider h5 {
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.65);
+}
+
+#clubs {
+	padding: 0 80px;
+}
+
+.parallax-container {
+  height: 200px;
+}
+
+.parallax img {
+	opacity: 0.5!important;
+}
+
+
+
+/*Navigation*/
+.topnav li a {
+	color: #eceff1 !important;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/*Table*/
+.table {
+	margin-top: 20px;
+	margin-bottom: 60px;
+	border-radius: 10px !important;	
+}
+
+thead th {
+	color: #ECEFF1;
+	font-weight: 500 !important;
+}
+
+th, td {
+	padding: 20px !important;	
+}
+
+/*Card page team*/
+.card-image {
+ 	width: 205px;
+ }
+
+.horizontal {
+	height: 450px;
+ 	padding: 25px !important;
+	margin-bottom: 63px;	
+}
+
+
+/*Footer*/
+.page-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+
+
+/*Responsive Mobile*/
+@media screen and(max-width: 600px){
+	.parallax-container {
+	  height: 600px !important;
+	}
+}

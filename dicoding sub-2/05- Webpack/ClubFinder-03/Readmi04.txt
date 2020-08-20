@@ -1,0 +1,19 @@
+# Module 2
+-- Menerapkan arrow function & Object --
+-- Menerapkan Class(method, inheritance) --
+-- Menerapkan Async/Await Syntax --
+-- Menerapkan ES6 Export and Import syntax --
+
+# Module 3
+-- Menerapkan Custom Element pada Web Component ---
+
+***** Solution: Menerapkan Shadow DOM pada Proyek Club Finder ****
+-- Menerapkan Shadow DOM pada Web Component ---
+
+# Module 5
+*** Solution: Menerapkan Webpack pada Club Finder ***
+-- Menerapkan Webpack pada Club Finder ---
+
+# Module 6
+**** Solution: Menerapkan Fetch pada Proyek Club Finder ****
+-- Menerapkan AJAX menggunakan Fetch pada pada Proyek Club Finder ---

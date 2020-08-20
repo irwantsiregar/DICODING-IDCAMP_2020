@@ -1,0 +1,9 @@
+## What is a Node Package Manager?
+
+Node Package Manager (NPM) merupakan pengelola package untuk JavaScript yang dapat memudahkan kita dalam mengelola package yang tersedia pada https://www.npmjs.com/. NPM ini merupakan standard package manager yang disediakan oleh Node.js dan sudah otomatis terpasang ketika memasang Node.js pada komputer kita. 
+
+Walaupun NPM sudah dibundel pada Node.js, tak berarti kita harus paham terlebih dahulu mengenai Node.js runtime ataupun node application untuk menggunakannya. Namun NPM ini dapat kita manfaatkan untuk ranah Front-End Development seperti memasang Bootstrap, JQuery, atau JavaScript package/framework lain yang membantu pengembangan Front-End Development. Karena esensialnya NPM ini merupakan package manager untuk JavaScript sehingga tidak diperlukan memerlukan skill Node.js mahir untuk menggunakanya.
+
+Berbicara mengenai package atau module, sebelumnya kita sudah membuat dan mengetahui fungsinya. Dengan module kita dapat berbagi kode JavaScript untuk digunakan pada berkas yang berbeda dan bahkan melalui NPM kita dapat menggunakannya pada proyek yang berbeda. Dalam arti lain, JQuery, Bootstrap, ataupun package lainnya yang tersedia pada NPM adalah sebuah module. Saat materi ini ditulis, sudah terdapat 1,204,963 package yang dapat kita manfaatkan.
+
+Sudah siap mencoba NPM? Ayo kita mulai pasang pada komputer kita.

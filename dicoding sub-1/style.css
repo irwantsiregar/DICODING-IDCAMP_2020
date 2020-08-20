@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: inline;
+  object-fit: cover;
+  object-position: center;
+}
+
+.jumbotron {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+nav {
+  background-color: #F8F7FF;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #777;
+}
+
+nav a:hover {
+  font-weight: 500;
+}
+
+nav a:visited {
+  border-bottom: 1px solid #6a6;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+  margin-bottom: 100px;
+}
+
+#content {
+  width: 75%;
+  float: left;
+}
+
+.content-card, .section-card {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.section-card .bahasa {
+  display: inline;
+  margin-left: 20px;
+}
+
+.section-card h2 {
+  text-align: center;
+}
+
+.section-card .bidang  {
+  display: inline;
+  margin-left: 120px;
+}
+
+.bidang .left {
+  margin-bottom: 20px;
+}
+
+.bidang span {
+  margin-left: -110px;
+}
+
+/* aside */
+aside {
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+
+.aside-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.pos {
+  display: inline;
+}
+
+
+
+.aside-card header{
+  padding: 20px;
+  text-align: center;
+}
+
+figure .profile {
+  margin-bottom: 20px;
+}
+
+
+/* footer */
+footer {
+  padding: 60px;
+  background-color: #F8F7FF;
+  text-align: center;
+}
+
+footer .media{
+  display: inline;
+  margin-right: 10px;
+}
+
+footer .footer p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}

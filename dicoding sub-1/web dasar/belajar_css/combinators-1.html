@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators-1</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+    /*
+    h2 + p {
+        color: fuchsia;
+    }
+    
+*/
+    h2~p {
+        color: green;
+    }
+
+    /*
+    div > p {
+        color: aqua;
+    }
+*/
+
+    div p {
+        color: red;
+    }
+
+</style>
+
+<body>
+    <h2>Kota bandung</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nostrum?</p>
+    <hr>
+
+    <div>
+        <p>paragraf pertama. di dalam div</p>
+        <p>paragraf kedua. di dalam div</p>
+        <section>
+            <p>paragraf ketiga. di dalam div</p>
+        </section>
+        <p>paragraf ke-empat. di dalam div</p>
+    </div>
+    <hr>
+    <p>paragraf kelima. di luar div</p>
+    <p>paragraf keenam. di luar div</p>
+</body>
+
+</html>

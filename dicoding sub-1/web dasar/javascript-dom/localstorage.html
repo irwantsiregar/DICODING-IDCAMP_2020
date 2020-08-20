@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Local Storage</title>
+</head>
+<body>
+  <p>Anda sudah menekan tombol sebanyak <span id="count"></span> kali</p>
+  <button id="button">Click disini</button>
+  <button id="clear">Hapus Storage</button>
+
+  <script>
+    const cacheKey = "NUMBER";
+    if (typeof(Storage) !== "undefined"){
+      //pengecekkan apakah data localstorage dengan key NUMBER tersedia
+      if (localStorage.getItem(cacheKey) === "undefined"){
+        //jika belum maka akan atur dengan nilai awal yakni 0
+        localStorage.setItem(cacheKey, 0);
+      }
+
+      const button = document.querySelector("#button");
+      const clearButton = document.querySelector("#clear");
+      const count = document.querySelector("#count");
+
+      button.addEventListener('click', function(event){
+        let number = localStorage.getItem(cacheKey);
+        number++;
+        localStorage.setItem(cacheKey, number);
+        count.innerText = localStorage.getItem(cacheKey);
+      });
+      clearButton.addEventListener('click', function(event){
+        localStorage.removeItem(cacheKey);
+      });
+
+    } else {
+      alert("Browser tidak mendukung web storage");
+    }
+  </script>
+</body>
+</html>

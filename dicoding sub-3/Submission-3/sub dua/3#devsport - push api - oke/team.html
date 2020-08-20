@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Devsports - Football</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Devsports sport the best in world"/>
+  <meta name="theme-color" content="#AA00FF"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="./image/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./image/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Navigasi -->
+    <nav class="black" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="./#standings" class="brand-logo links" id="logo-container">
+          <img src="./image/favicon-32x32.png" alt="Logo Devsball"><span class="hide-on-small-only blue-grey-text text-lighten-5">Devsports</span>
+        </a>
+        <a href="./#standings" class="sidenav-trigger links" data-target="nav-mobile">
+          <i class="material-icons show-on-large">reply_all</i>
+        </a>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+  </header>
+
+  <main>
+    <div class="btn-back hide-on-med-and-down">
+      <a href="./index.html" class="waves-effect teal lighten-2 btn-small links">
+        <i class="material-icons left">home</i><i class="material-icons left">chevron_left</i></a>
+    </div>
+    <div class="container" id="body-content"> </div>
+
+   <div class="fixed-action-btn">
+      <a class="btn-floating btn red lighten-4" id="save-favorite">
+        <i class="large material-icons red-text">favorite</i>
+      </a>
+    </div>
+  </main>
+
+  
+<footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="sosmed center-align">
+         <a class="grey-text text-lighten-4 right" href="#">
+          <img src="./image/github.png" alt="github">
+        </a>
+        <a class="grey-text text-lighten-4 right" href="#">
+          <img src="./image/fb.png" alt="facebook">
+        </a>
+        <a class="grey-text text-lighten-4 right" href="#">
+          <img src="./image/twitter.png" alt="twitter">
+        </a>
+        <a class="grey-text text-lighten-4 right" href="#">
+          <img src="./image/ig.png" alt="intagram">
+        </a>
+      </div>
+      <div class="copy grey-text lighten-5-textt">
+        <p>&copy; 2020 Devsports_ | Made with <span class="red-text">&hearts;</span> using PWA </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>          
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/registration.js"></script>
+  <script src="./js/db/idb.js"></script>
+  <script src="./js/db/db.js"></script>
+  <script src="./js/db/api-db.js"></script>
+
+  <script src="./js/teambyid.js"></script>
+  <script src="./js/team.js"></script>
+
+</body>
+</html>

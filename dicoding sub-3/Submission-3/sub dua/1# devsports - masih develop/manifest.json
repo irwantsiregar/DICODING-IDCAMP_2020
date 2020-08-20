@@ -1,0 +1,16 @@
+{
+    "name": "Devsports player area football ",
+    "short_name": "Devsports",
+    "description": "Competition football the best in world",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#AA00FF",
+    "theme_color": "#42A5F5",
+    "icons": [
+        {
+            "src": "image/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
