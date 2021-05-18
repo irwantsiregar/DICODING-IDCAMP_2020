@@ -1,0 +1,26 @@
+# Install Package ke dalam Node_modules pada Project -> production(dependencies)
+	$ npm install <package>
+
+# Install Package ke dalam Node_modules pada Project -> development(devDependencies)
+	$ npm install <package> --save-dev
+
+# Install Eslint ke dalam Node_modules pada Project -> development(devDependencies)
+	$ npm install eslint --save-dev
+	Inisialisasi eslint dengan menjawab pertanyaan:
+	$ npx eslint --init
+
+
+# Menghapus Node_modules dari project
+	$ rm -rf node_modules
+
+# Menghapus/membersihkan cache pada project
+	$ npm clean cache --force
+	$ npm cache verify
+
+
+
+Account AWS:
+Email: irwanto.regar30@gmail.com
+Password: Regar199630$
+
+

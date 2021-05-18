@@ -1,0 +1,32 @@
+{
+    "gcm_sender_id": "182654674244",
+    "name": "Devsports Association Football",
+    "short_name": "Devsports",
+    "description": "Competition football the best in world",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "Scope": "/",
+    "background_color": "#212121",
+    "theme_color": "#212121",
+    "icons": [
+        {
+            "src": "image/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "image/android-chrome-192x192.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "image/apple-touch-icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
