@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Capturing World</title>
+        <style>
+          body * {
+            margin: 8px;
+            padding: 5px;
+            border: 1px solid black;
+            border-width:2px;
+            width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center" id="langit">LANGIT
+            <div align="center" id="luar">LUAR
+                <div align="center" id="tengah">TENGAH
+                    <div align="center" id="dalam">DALAM</div>
+                </div>
+            </div>
+        </div>
+ 
+        <script>
+            const divElements = document.getElementsByTagName('div');
+
+            for(let element of divElements) {
+                element.addEventListener('click', function(){
+                    alert('ELEMEN '+ element.getAttribute('id').toUpperCase())
+                }, true);
+
+                // Parameter ketiga yaitu 'true', menandakan bubbling di nonaktifkan.
+                // Karena secara default bubbling adalah bernilai 'false'.
+                // Kemudian ketika event listener dijalankan sifat capturing yg akan terjadi.
+            }
+
+        </script>
+    </body>
+</html>

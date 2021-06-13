@@ -1,0 +1,360 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}	
+
+header {
+	background-color: #769fcd;
+	display: flex;
+	overflow: hidden;
+	padding: 5px 15px;
+  justify-content: space-between;
+}
+
+header a {
+	display: inline-block;
+	min-width: 44px;
+	line-height: 44px;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #fcfdfc;
+}
+
+header .logo {
+	letter-spacing: .3px;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+header .about__me {
+  font-size: 26px;
+}
+
+/* Main Content */
+main {
+	min-height: 80vh;
+}
+
+.component__button {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	padding: 7px 7px 0; 
+	justify-content: space-between;
+} 
+
+.component__button .btn {
+  background-color: #5a8fca;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+section.books { 
+	width: 90%;
+	margin: 0 auto;
+  box-shadow: 7px 9px 12px #eee;
+}
+
+.container__books {
+	color: #4e4e4e;
+	background-color: #fafafa;
+	border-radius: 0 0 4px 4px;
+}
+
+.container__books.finished,
+.container__books.not_finished {
+	padding: 10px;
+	text-align: left; 	
+	border: 1px solid #ddd;
+}
+
+
+/* Tab content */
+.container__books.button__tab-content {
+  display: flex;
+}
+
+.container__books .tabnavcontent {
+  color: #3b4346;
+  width: 100%;
+  background-color: #b9d7ea;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 14px 16px;
+  text-shadow: 1px 1px 1px #f8f7f8;
+  border: 1px solid #ddd;
+  outline: none;
+  cursor: pointer;
+}
+
+.container__books .tabnavcontent:hover {
+  background-color: #a4cde6;
+}
+
+.container__books .item {
+    display: flex;
+    align-items: center;
+    border: 1px dashed #bbd5d3;
+    border-radius: 16px;
+    background-color: #fcfbfc;
+    padding: 12px 24px 12px 24px;
+    margin-bottom: 10px;
+}
+
+.item > .inner h1 {
+  margin-bottom: unset;
+	font-size: 21px;
+  font-weight: 600;
+}
+
+.item > .inner h2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+	font-size: 16px;
+}
+
+/* button icons item book */
+.check-button {
+    background: url('../icons/check-outline.svg');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../icons/check-solid.svg');
+    background-size: contain;
+}
+
+.edit-button {
+    background: url('../icons/check-outline.svg');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.edit-button:hover {
+    background: url('../icons/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button{
+    background: url('../icons/trash-outline.svg');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../icons/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button{
+    background: url('../icons/undo-ouline.svg');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../icons/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+
+/* Form Input Modal*/
+input[type=text], input[type=search], 
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container__form {
+  padding: 14px;
+  background-color: #f1f1f1;
+}
+
+.container__form .button__form {
+  color: #faf9f9;
+  font-weight: 600;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container__form .button__form:hover {
+  opacity: 0.8;
+}
+
+.container__form .added {
+  background-color: #04AA6D;
+}
+
+.container__form.for__delete h4 {
+  text-align: center;
+}
+
+.container__form.for__delete {
+}
+
+.container__form .delete {
+  background-color: #e02020;
+}
+
+.container__form .cancel {
+  background-color: #e6e6e6;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.modal-content span.avatar {
+  width: 40%;
+  color: #cc8a12;
+  border-radius: 50%;
+  font-size: 60px;
+}
+
+#sectionForm .modal__form {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal__form .modal-content {
+  width: 80%;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  box-shadow: 3px 4px 12px #bdbdbd;
+  border-radius: 6px;
+}
+
+.modal-content .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+.copyright__footer {
+	margin-top: -7px;
+	background-color: #d6e6f2;
+}
+
+.copyright__footer p {
+  color: #41435d;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 10px;
+}
+
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: space-around;
+  } 
+
+  section.books {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    top: 120px;
+  }
+
+  .container__books {
+  }
+
+  .container__books.finished,
+  .container__books.not_finished {
+    padding: 30px 60px;
+  }
+
+  .component__button {
+    justify-content: space-around;
+  }
+
+  .modal__form .modal-content  {
+    width: 40%;
+  } 
+
+}

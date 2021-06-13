@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Literasi | Enjoy the day in the literacy room</title>
+	  <!-- Fonts-google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<a href="index.html" class="logo">Literacy</a>
+		<a href="https://www.linkedin.com/in/irwanto-siregar/" target="_blank" class="about__me"><i class="fa fa-linkedin"></i></a>
+	</header>
+
+	<!-- Main -->
+	<main>
+		<section>
+			<div class="component__button">
+				<button class="btn add" id="btnAdd"><i class="fa fa-plus"></i></button>
+				<button class="btn search" id="btnSearch"><i class="fa fa-search"></i></button>
+			</div>	
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d6e6f2" fill-opacity="1" d="M0,288L26.7,288C53.3,288,107,288,160,261.3C213.3,235,267,181,320,181.3C373.3,181,427,235,480,240C533.3,245,587,203,640,202.7C693.3,203,747,245,800,266.7C853.3,288,907,288,960,261.3C1013.3,235,1067,181,1120,165.3C1173.3,149,1227,171,1280,160C1333.3,149,1387,107,1413,85.3L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+		</section>
+		<section id="sectionForm">
+			<div id="modalForm" class="modal__form">
+			  <form id="formInput" class="modal-content animate">
+			    <div class="imgcontainer">
+			      <span class="close" id="closeAdd" title="Close Modal">&times;</span>
+			      <span class="avatar"><i class="fa fa-book"></i></span>
+			    </div>
+			    <div class="container__form">
+			      <label for="titleBook"><b>Title Book</b></label>
+			      <input type="text" placeholder="Enter title book" id="titleBook" name="titlebook" autocomplete="off" required>
+			      <label for="authorBook"><b>Author</b></label>
+			      <input type="text" placeholder="Enter author book" id="authorBook" name="authorbook" autocomplete="off" required>
+			      <label for="yearBook"><b>Year</b></label>
+			      <input type="number" placeholder="Enter year book" id="yearBook" name="yearbook" maxlength="4" required>
+			      <label>
+			        <input type="checkbox" id="checkboxFinish" name="complete"> Complete
+			      </label>
+			    </div>
+			    <div class="container__form">
+			      <button type="submit" class="button__form added" id="buttonFormAdded">Add</button>
+			      <button type="reset" class="button__form cancel" id="buttonFormAdded">Cancel</button>
+			    </div>
+			  </form>
+			 </div>
+		</section>
+		<section id="sectionForm">
+			<div id="modalFormSearch" class="modal__form">
+			  <form class="modal-content animate" action="" method="">
+			    <div class="imgcontainer">
+			      <span class="close" id="closeSearch" title="Close Modal">&times;</span>
+			    </div>
+			    <div class="container__form">
+			      <label for="searchBook"><b>Search Books</b></label>
+			      <input type="search" placeholder="Enter book title.." id="searchBook" name="search_book" autocomplete="off" required>
+			     </div>
+			  </form>
+			 </div>
+		</section>
+		<section id="sectionForm">
+			<div id="modalMessageAction" class="modal__form">
+			  <form class="modal-content animate">
+			    <div class="container__form for__delete">
+			      <h4 id="deleteWarning">Are You sure you want to delete?</h4>
+			      <button type="button" class="button__form delete" id="btnDelete">Delete</button>
+			      <button type="reset" class="button__form cancel danger" id="btnCancel">Cancel</button>
+			    </div>
+			  </form>
+			 </div>
+		</section>
+		<section class="books">
+			<div class="container__books button__tab-content">
+				<button class="tabnavcontent btn_notfinished" id="defaultOpen">Reading</button>
+				<button class="tabnavcontent btn_finished">Finished</button>
+			</div>
+			<div id="finishedReading" class="container__books tabcontent finished">
+			</div>
+			<div id="notFinishedReading" class="container__books tabcontent not_finished">
+			</div>			
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d6e6f2" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,165.3C384,192,480,256,576,240C672,224,768,128,864,122.7C960,117,1056,203,1152,213.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>	
+		</section>
+		<div class="copyright__footer">
+			<p>Copyright &copy; 2021 - <strong>Literacy</strong></p>
+		</div>
+	</footer>
+	
+	<script src="assets/scripts/isStorageExist.js"></script>
+	<script src="assets/scripts/variabelConstanta.js"></script>
+	<script src="assets/scripts/mainContentLoaded.js"></script>
+	<script src="assets/scripts/domContent.js"></script>
+	<script src="assets/scripts/createDataBooks.js"></script>
+	<script src="assets/scripts/taskFromCompleted.js"></script>
+	<script src="assets/scripts/createComponentsButton.js"></script>
+	<script src="assets/scripts/manipulationDataBooks.js"></script>
+	<script src="assets/scripts/findBook.js"></script>
+	<script src="assets/scripts/refreshDataFromBooks.js"></script>
+</body>
+</html>
