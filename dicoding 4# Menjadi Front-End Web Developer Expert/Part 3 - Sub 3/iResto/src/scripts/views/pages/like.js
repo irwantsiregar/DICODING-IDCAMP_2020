@@ -12,6 +12,8 @@ const Like = {
   },
 
   async afterRender() {
+    document.querySelector('.jumbotron').style.display = 'block';
+
     new FavoriteMenuShowPresenter({ view, favoriteMenus: FavoriteiRestoIdb });
     new FavoriteMenuSearchPresenter({ view, favoriteMenus: FavoriteiRestoIdb });
   },

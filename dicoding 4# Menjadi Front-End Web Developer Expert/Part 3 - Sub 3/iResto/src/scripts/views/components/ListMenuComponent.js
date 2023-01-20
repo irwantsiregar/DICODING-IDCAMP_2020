@@ -7,7 +7,7 @@ class ListMenu extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <h2><i class="fa fa-list-alt fa-lg" aria-hidden="true"></i> Explore Restaurant</h2>
+    <h2 id="restaurants"><i class="fa fa-list-alt fa-lg" aria-hidden="true"></i> Restaurants</h2>
     <div class="container-cards" id="card-restaurants">
       ${createSkeletonListItemTemplate(15)}
     </div>

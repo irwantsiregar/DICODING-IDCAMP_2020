@@ -14,6 +14,8 @@ const Detail = {
   },
 
   async afterRender() {
+    document.querySelector('.jumbotron').style.display = 'none';
+
     const detailMenuContainer = document.querySelector('#detail-menu');
     detailMenuContainer.innerHTML = createIndicatorLoadingTemplate();
 

@@ -4,9 +4,9 @@ import Detail from '../views/pages/detail';
 
 const routes = {
   '/': ListMenu,
-  '/list-menu': ListMenu,
+  '/restaurants': ListMenu,
   '/detail/:id': Detail,
-  '/like': Like,
+  '/favorites': Like,
 };
 
 export default routes;

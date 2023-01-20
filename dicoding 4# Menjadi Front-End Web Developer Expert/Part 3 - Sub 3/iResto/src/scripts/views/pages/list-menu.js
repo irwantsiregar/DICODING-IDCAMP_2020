@@ -8,6 +8,7 @@ const ListMenu = {
   },
 
   async afterRender() {
+    document.querySelector('.jumbotron').style.display = 'block';
     const listItemContainer = document.querySelector('#card-restaurants');
 
     const listItem = await RestaurantSource.listMenu();

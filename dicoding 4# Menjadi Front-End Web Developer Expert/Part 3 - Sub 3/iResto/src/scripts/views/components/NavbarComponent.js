@@ -8,11 +8,11 @@ class Navbar extends HTMLElement {
     <nav>
       <button id="hamburger" aria-label="hamburger menu">☰</button>
       <div class="logo">
-        <a href="#">iResto</a>
+        <a href="/">iResto</a>
       </div>
       <ul>
-        <li><a href="#/list-menu" class="active" aria-label="link navigasi">List Menu</a></li>
-        <li><a href="#/like" aria-label="link navigasi">Favorite</a></li>
+        <li><a href="#/restaurants" class="active" aria-label="link navigasi">Home</a></li>
+        <li><a href="#/favorites" aria-label="link navigasi">Favorite</a></li>
         <li><a href="https://www.linkedin.com/in/irwanto-siregar/?locale=in_ID" rel="noopener" target="_blank"
             aria-label="link navigasi">About Us</a>
         </li>

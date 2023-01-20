@@ -8,8 +8,10 @@ class Footer extends HTMLElement {
   }
 
   render() {
+    const date = new Date();
+
     this.innerHTML = `
-      <p>Copyright &copy; 2020 - <span class="i-logo">iResto </span></p>
+      <p>&copy; 2020 - ${date.getFullYear()} <span class="i-logo">iResto</span>. All Rights Reserved.</p>
     `;
   }
 }
