@@ -1,3 +1,4 @@
+
 # Install Package ke dalam Node_modules pada Project -> production(dependencies)
 	$ npm install <package>
 
@@ -6,9 +7,8 @@
 
 # Install Eslint ke dalam Node_modules pada Project -> development(devDependencies)
 	$ npm install eslint --save-dev
-	Inisialisasi eslint dengan menjawab pertanyaan:
+	  Inisialisasi eslint dengan menjawab pertanyaan:
 	$ npx eslint --init
-
 
 # Menghapus Node_modules dari project
 	$ rm -rf node_modules
@@ -16,6 +16,22 @@
 # Menghapus/membersihkan cache pada project
 	$ npm clean cache --force
 	$ npm cache verify
+
+-------------------------------------------------------
+
+Setup Projek Pertama Kali, Ketik Perintah:
+- $ npm init -y
+- $ npm install eslint --save-dev
+- $ npx eslint --init
+
+
+-------------------------------------------------------
+
+# Check penulisan kode pada projek sudah sesuai dengan style guide yg dipilih atau belum
+	$ npx eslint ./src
+
+# Auto fix error kode yang berasal dari guide eslint 
+	$ npx auto -fix
 
 
 

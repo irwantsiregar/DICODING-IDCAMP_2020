@@ -1,0 +1,61 @@
+	### "Dengan Mode Development => npm run start-dev" ###
+
+1. Menjadikan HP ke konfigurasi mode developer/pengembang.
+   pengaturan->tentang ponsel->ketuk 7 kali versi sistem/perangkat lunak untuk aktifkan fitur debugging-> aktifkan slide opsi pengembang & usb debugging.
+
+2. Sambungkan HP ke PC/Komputer menggunakan kabel USB.
+
+3. Jalankan Project Web Anda melalui terminal text editor "npm run start-dev"
+
+4. Kemudian lihat dan catat alamat Host/IP yg dihasilkan dari running projek. 
+   Biasanya akan muncul dengan tulisan "Project is running at http://localhost:8080/"
+
+5. Buka web browser Chrome pada PC/Komputer, kemudian pada address bar, ketik "chrome://inspect/#devices" utk mengakses mode DevTools.
+   a. Pilih menu 'Devices'.
+   b. Centang 'Discover USB Devices' dan pada sisi kanan klik tab 'Port forwarding' maka akan muncul PopUp untuk mengatur dan mendaftarkan IP Address and Port agar dapat diakses memalui USB Devices.
+   c. Isi dengan alamat Host/IP yg sebelumnya dihasilkan dari Project is running, Misal: pada textBox port isi dengan: 8080 dan textBox IP Address and Port: localhost:8080 atau 127.0.0.1:8080. Selanjutnya centang 'Enable port forwarding' dan klik Done.
+
+
+5. Buka web browser Chrome pada HP, lalu pada address bar ketikan IP Address and Port yg sebelumnya telah didaftarkan pada web browser chrome-inspect-devices di PC/Komputer, misal: http://localhost:8080 atau http://127.0.0.1:8080.
+  Hal ini bertujuan agar HP dapat mengakses halaman Web yang disediakan oleh PC/Komputer Anda melalui sambungan USB Device.
+
+6 Selamat!! Projek Web App berhasil diakses melalui HP.
+
+.
+.
+.
+.
+
+	### "Dengan Mode Production => folder 'dist' atau hasil dari npm run build" ###
+
+1. Menjadikan HP ke konfigurasi mode developer/pengembang.
+   pengaturan->tentang ponsel->ketuk 7 kali versi sistem/perangkat lunak untuk aktifkan fitur debugging-> aktifkan slide opsi pengembang & usb debugging.
+
+2. Sambungkan HP ke PC/Komputer menggunakan kabel USB.
+
+3. Install Extensions "Web Server for Chrome" di web browser Chrome pada PC/Komputer Anda.
+   Link App => https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/reviews
+
+4. Kemudian setelah berhasil diinstall, untuk memastikannya pada address bar coba ketikan: chrome://apps/
+   Maka seharusnya terlihat ada tambahan aplikasi 'Web Server' dengan logo 200 OK.
+
+3. Selajutnya klik aplikasi Web Server tersebut, kemudian klik 'Choose Folder' dan pilih folder projek yg akan dijalankan dalam hal ini misalnya folder "dist", lalu pada bagian bawah dengan tulisan 'Enter Port' silahkan masukkan nomor/angka PORT: misal: 8887
+
+5. Buka web browser Chrome pada PC/Komputer, kemudian pada address bar, ketik "chrome://inspect/#devices" utk mengakses mode DevTools.
+   a. Pilih menu 'Devices'.
+   b. Centang 'Discover USB Devices' dan pada sisi kanan klik tab 'Port forwarding' maka akan muncul PopUp untuk mengatur dan mendaftarkan IP Address and Port agar dapat diakses memalui USB Devices.
+   c. Isi dengan alamat Host/IP yg ada pada aplikasi Web Server for Chrome, Misal: pada textBox port isi dengan: 8887 dan textBox IP Address and Port: 127.0.0.1:8887 atau localhost:8887. Selanjutnya centang 'Enable port forwarding' dan klik Done.
+
+
+5. Buka web browser Chrome pada HP, lalu pada address bar ketikan IP Address and Port yg sebelumnya telah didaftarkan pada web browser chrome-inspect-devices di PC/Komputer, misal: http://localhost:8080 atau http://127.0.0.1:8080.
+  Hal ini bertujuan agar HP dapat mengakses halaman Web yang disediakan oleh PC/Komputer Anda melalui sambungan USB Device.
+
+6 Selamat!! Projek Web App berhasil diakses melalui HP.
+
+
+
+
+ References And Documentation:
+a. https://stackoverflow.com/questions/21925992/chrome-devtools-devices-does-not-detect-device-when-plugged-in
+b. https://developer.chrome.com/docs/devtools/remote-debugging/
+c. https://developer.android.com/studio/debug/dev-options
